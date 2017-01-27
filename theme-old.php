@@ -50,7 +50,7 @@ class JustLightTheme extends AbstractTheme implements ThemeInterface {
 
 	/** {@inheritdoc} */
 	public function assetUrl() {
-		return 'themes/oosratk/css-1.7.9/';
+		return 'themes/justlight/css-1.7.9/';
 	}
 
 	/** {@inheritdoc} */
@@ -172,12 +172,8 @@ class JustLightTheme extends AbstractTheme implements ThemeInterface {
 		return
 			'<div class="credits">' .
 			$this->logoPoweredBy() .
-			'<a href="http://oosra.tk">Oosra.tk</a> '. getdate()["year"] .
-                        ' Powerd by <a href="http://webtrees.net"> Webtress</a>.' .
-                        '<br/>' .
-                        ' Design by <a href="http://ghazy.ga">Ghazy Abdallah</a>'
-                        .' Powered by <a href="http://justcarmen.nl">JustCarmen</a>' .
-                        '</div>';
+			'<a href="http://www.justcarmen.nl">Design: justcarmen.nl</a>' .
+			'</div>';
 	}
 
 	protected function formatNavbarToggle() {
@@ -275,8 +271,8 @@ class JustLightTheme extends AbstractTheme implements ThemeInterface {
 	/** {@inheritdoc} */
 	public function hookAfterInit() {
 		// Put a version number in the URL, to prevent browsers from caching old versions.
-		$this->theme_dir	 = 'themes/oosratk/';
-		$this->js_url		 = 'themes/oosratk/js-1.7.9/';
+		$this->theme_dir	 = 'themes/justlight/';
+		$this->js_url		 = 'themes/justlight/js-1.7.9/';
 		$this->bootstrap_url = $this->theme_dir . 'bootstrap-3.3.6/';
 		$this->jquery_ui_url = $this->theme_dir . 'jquery-ui-1.11.4/';
 		$this->colorbox_url	 = $this->theme_dir . 'colorbox-1.5.14/';
@@ -644,12 +640,12 @@ class JustLightTheme extends AbstractTheme implements ThemeInterface {
 
 	/** {@inheritdoc} */
 	public function themeId() {
-		return 'oosratk';
+		return 'justlight';
 	}
 
 	/** {@inheritdoc} */
 	public function themeName() {
-		return /* I18N: Name of a theme. */ I18N::translate('Oosratk');
+		return /* I18N: Name of a theme. */ I18N::translate('JustLight');
 	}
 
 	// This theme comes with an optional module to set a few theme options
